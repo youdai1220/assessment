@@ -86,6 +86,12 @@
         result = result.replace(/{userName}/g, userName);
         return result;
     }
+    
+    usernameInput.onkeydown=(event)=>{
+        if(event.key==='Enter'){
+            assessmentButton.onclick();
+        };
+    };
 
     // テストコード
     console.assert(
